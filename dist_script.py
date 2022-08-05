@@ -6,9 +6,9 @@ if __name__ == '__main__':
     cross_ratios = [0, 20, 80, 100]
     mid = 0
     port = 12345
-    ip0 = '172.17.0.2'
-    ip1 = '172.17.0.3'
-    ip2 = '172.17.0.4'
+    ip0 = '172.22.32.22'
+    ip1 = '172.22.32.23'
+    ip2 = '172.22.32.24'
     os.system('mkdir log')
     os.system('mkdir log/Aria')
     os.system('mkdir log/Calvin')
