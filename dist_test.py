@@ -67,7 +67,7 @@ if __name__ == '__main__':
                 os.system(command)
                 port += 1
         # impact of threads
-        for thread in range(2, 5):
+        for thread in range(2, 3):
             for batch_size in range(20, 40, 20):
                 logdir = 'log/' + db + '/threads-' + str(thread)
                 os.system('mkdir ' + logdir)
