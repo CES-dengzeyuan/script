@@ -2,7 +2,7 @@ import os
 
 if __name__ == '__main__':
     dblist = ['Aria', 'Calvin']
-    wkldlist = ['neworder', 'payment', 'mixed']
+    wkldlist = ['neworder']
     mid = 0
     port = 12345
     ip0 = '172.22.32.22'
