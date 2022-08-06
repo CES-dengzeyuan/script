@@ -5,9 +5,9 @@ if __name__ == '__main__':
     wkldlist = ['neworder']
     mid = 0
     port = 12345
-    ip0 = '172.22.32.22'
-    ip1 = '172.22.32.23'
-    ip2 = '172.22.32.24'
+    ip0 = '172.22.32.25'
+    ip1 = '172.22.32.26'
+    ip2 = '172.22.32.27'
     os.system('mkdir log')
     os.system('mkdir log/Aria')
     os.system('mkdir log/Calvin')
