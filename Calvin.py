@@ -18,7 +18,7 @@ if __name__ == '__main__':
                 logdir = 'log/' + db + '/' + wkld
                 os.system('mkdir ' + logdir)
                 ips = ip0 + ":" + str(port) + ";" + ip1 + ":" + str(port) + ";" + ip2 + ":" + str(port)
-                command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=" + wkld + " --replica_group=3  --same_batch=True"
+                command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=" + wkld + " --replica_group=3"
                 print(command)
                 os.system(command)
                 port += 1
