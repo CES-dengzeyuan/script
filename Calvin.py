@@ -6,9 +6,9 @@ if __name__ == '__main__':
     cross_ratios = [0, 20, 80, 100]
     mid = 0
     port = 12345
-    ip0 = '172.22.32.31'
-    ip1 = '172.22.32.32'
-    ip2 = '172.22.32.33'
+    ip0 = '172.22.32.34'
+    ip1 = '172.22.32.35'
+    ip2 = '172.22.32.36'
     os.system('mkdir log')
     os.system('mkdir log/Calvin')
     for db in dblist:
