@@ -22,7 +22,7 @@ if __name__ == '__main__':
                 if db == 'Aria':
                     command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Aria --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=" + wkld
                 else:
-                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=" + wkld + " --replica_group=3  --same_batch=True"
+                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=" + wkld + " --replica_group=3"
                 print(command)
                 os.system(command)
                 port += 1
@@ -35,7 +35,7 @@ if __name__ == '__main__':
                 if db == 'Aria':
                     command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Aria --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=neworder --neworder_dist=" + str(cr)
                 else:
-                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=neworder --replica_group=3  --same_batch=True --neworder_dist=" + str(cr)
+                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=neworder --replica_group=3 --neworder_dist=" + str(cr)
                 print(command)
                 os.system(command)
                 port += 1
@@ -48,7 +48,7 @@ if __name__ == '__main__':
                 if db == 'Aria':
                     command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Aria --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=payment --payment_dist=" + str(cr)
                 else:
-                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=payment --replica_group=3  --same_batch=True --payment_dist=" + str(cr)
+                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=5 --batch_size=" + str(batch_size) + " --query=payment --replica_group=3 --payment_dist=" + str(cr)
                 print(command)
                 os.system(command)
                 port += 1
@@ -61,7 +61,7 @@ if __name__ == '__main__':
                 if db == 'Aria':
                     command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Aria --partition_num=324 --threads=" + str(thread) + " --batch_size=" + str(batch_size) + " --query=neworder"
                 else:
-                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=" + str(thread) + " --batch_size=" + str(batch_size) + " --query=neworder --replica_group=3  --same_batch=True"
+                    command = "./bench_tpcc --log_dir=" + logdir + " --id=" + str(mid) + " --servers='" + ips + "' --protocol=Calvin --partition_num=324 --threads=" + str(thread) + " --batch_size=" + str(batch_size) + " --query=neworder --replica_group=3"
                 print(command)
                 os.system(command)
                 port += 1
